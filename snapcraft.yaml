@@ -1,5 +1,5 @@
 name: google-play-music-desktop-raof
-version: '4.0.3'
+version: '4.0.4'
 summary: Standalone player for Google Play Music
 description: |
   This Google Play Music player provides desktop integration - with music
@@ -25,13 +25,12 @@ apps:
       - process-control
       - unity7
     slots:
-      - mpris
-            #      - gpmdp-mpris
+      - gpmdp-mpris
 
-#slots:
-#  gpmdp-mpris:
-#    interface: mpris
-#    name: google-play-music-desktop-player
+slots:
+  gpmdp-mpris:
+    interface: mpris
+    name: google-play-music-desktop-player
 
 parts:
   google-play-music-desktop-player:
